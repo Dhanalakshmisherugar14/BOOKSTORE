@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "name": "CRIME",
+    "price": 449,
+    "category": "STORY",
+    "image": "https://picsum.photos/200/300?random=1",
+    "title": "AUTOGRAPHY",
+    "description": "A thrilling crime story that keeps you on the edge of your seat."
+  },
+  {
+    "id": 2,
+    "name": "J.K. ROWLING",
+    "price": 395,
+    "category": "FANTASY",
+    "image": "https://picsum.photos/200/300?random=2",
+    "title": "HARRY POTTER AND THE SORCERER'S STONE",
+    "description": "The first book in the legendary Harry Potter series."
+  },
+  {
+    "id": 3,
+    "name": "GEORGE ORWELL",
+    "price": 295,
+    "category": "DYSTOPIAN",
+    "image": "https://picsum.photos/200/300?random=3",
+    "title": "1984",
+    "description": "A chilling depiction of a totalitarian regime."
+  },
+  {
+    "id": 4,
+    "name": "J.R.R. TOLKIEN",
+    "price": 495,
+    "category": "FANTASY",
+    "image": "https://picsum.photos/200/300?random=4",
+    "title": "THE LORD OF THE RINGS",
+    "description": "An epic fantasy adventure in Middle-earth."
+  },
+  {
+    "id": 5,
+    "name": "HARPER LEE",
+    "price": 0,
+    "category": "CLASSIC",
+    "image": "https://picsum.photos/200/300?random=5",
+    "title": "TO KILL A MOCKINGBIRD",
+    "description": "A profound novel about racism and injustice in the American South."
+  },
+  {
+    "id": 6,
+    "name": "F. SCOTT FITZGERALD",
+    "price": 0,
+    "category": "CLASSIC",
+    "image": "https://picsum.photos/200/300?random=6",
+    "title": "THE GREAT GATSBY",
+    "description": "A tragic story of Jay Gatsby and his unrequited love for Daisy Buchanan."
+  },
+  {
+    "id": 7,
+    "name": "JANE AUSTEN",
+    "price": 2855,
+    "category": "ROMANCE",
+    "image": "https://picsum.photos/200/300?random=7",
+    "title": "PRIDE AND PREJUDICE",
+    "description": "A classic romantic novel about the manners and matrimonial machinations of British society."
+  },
+  {
+    "id": 8,
+    "name": "MARKUS ZUSAK",
+    "price": 3255,
+    "category": "HISTORICAL FICTION",
+    "image": "https://picsum.photos/200/300?random=8",
+    "title": "THE BOOK THIEF",
+    "description": "A powerful story set in Nazi Germany, narrated by Death."
+  },
+  {
+    "id": 9,
+    "name": "MARY SHELLEY",
+    "price": 0,
+    "category": "CLASSIC",
+    "image": "https://picsum.photos/200/300?random=9",
+    "title": "FRANKENSTEIN",
+    "description": "The story of Victor Frankenstein and his monstrous creation."
+  },
+  {
+    "id": 10,
+    "name": "LEWIS CARROLL",
+    "price": 150,
+    "category": "FANTASY",
+    "image": "https://picsum.photos/200/300?random=10",
+    "title": "ALICE'S ADVENTURES IN WONDERLAND",
+    "description": "A whimsical tale of Alice's adventures in Wonderland."
+  },
+  {
+    "id": 11,
+    "name": "HERMAN MELVILLE",
+    "price": 200,
+    "category": "CLASSIC",
+    "image": "https://picsum.photos/200/300?random=11",
+    "title": "MOBY-DICK",
+    "description": "The epic tale of Captain Ahab's obsessive quest to kill the white whale, Moby-Dick."
+  },
+  {
+    "id": 12,
+    "name": "CHARLOTTE BRONTË",
+    "price": 0,
+    "category": "ROMANCE",
+    "image": "https://picsum.photos/200/300?random=12",
+    "title": "JANE EYRE",
+    "description": "A Gothic novel about the experiences of the orphan Jane Eyre."
+  }
+]

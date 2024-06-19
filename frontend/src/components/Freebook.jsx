@@ -1,13 +1,26 @@
 import React from "react";
-
+//import list from "../..'/public/list.json";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import list from "../list.json";
 import Cards from "./Cards.jsx";
+import axios from "axios";
 
 function Freebook() {
-  //const filterData = list.filter((data) => data.category === "Free");
+  const [book, setBook] = React.useState([]);
+  React.useEffect(() => {
+    const getBook = async () => {
+      try {
+        await axios.get("/api/book").then((res) => {
+          const filterData = res.data.filter((data) => data.price === 0);
+          setBook(filterData);
+        });
+      } catch (error) {
+        console.error(error);
+      }
+    };
+    getBook();
+  }, []);
 
   var settings = {
     dots: true,
@@ -43,62 +56,33 @@ function Freebook() {
       },
     ],
   };
+
   return (
-    <div className="slider-container">
-      <Slider {...settings}>
+    <>
+      <div className="max-w-screen-2xl container mx-auto md:px-20 px-4">
         <div>
-          <h3>1</h3>
+          <h1 className="font-semibold text-3xl pb-2">Top Selling Books</h1>
+
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam
+            aperiam labore veniam illo fuga et ipsa laborum neque, perspiciatis
+            odit sint eligendi velit nihil earum sunt beatae. Molestiae, eveniet
+            nulla?
+          </p>
         </div>
-        <div>
-          <h3>2</h3>
+
+        <div className="slider-container gap-5 py-6">
+          <Slider {...settings}>
+            {book.map((item) => (
+              <div key={item.id}>
+                <Cards item={item} />
+              </div>
+            ))}
+          </Slider>
         </div>
-        <div>
-          <h3>3</h3>
-        </div>
-        <div>
-          <h3>4</h3>
-        </div>
-        <div>
-          <h3>5</h3>
-        </div>
-        <div>
-          <h3>6</h3>
-        </div>
-        <div>
-          <h3>7</h3>
-        </div>
-        <div>
-          <h3>8</h3>
-        </div>
-      </Slider>
-    </div>
+      </div>
+    </>
   );
-
-return (
-  <>
-    <div className="max-w-screen-2xl container mx-auto md:px-20 px-4">
-      <div>
-        <h1 className="font-semibold text-xl pb-2">free books to order</h1>
-
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam
-          aperiam labore veniam illo fuga et ipsa laborum neque, perspiciatis
-          odit sint eligendi velit nihil earum sunt beatae. Molestiae, eveniet
-          nulla?
-        </p>
-      </div>
-
-      <div>
-        <Slider {...settings}>
-          {book.map((item) => (
-            <Cards item={item} key={item.id} />
-          ))}
-        </Slider>
-      </div>
-    </div>
-  </>
-);
-  
 }
 
 export default Freebook;
