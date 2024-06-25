@@ -22,7 +22,7 @@ function Course() {
   }, []);
   return (
     <>
-      <div className="mt-16 container flex flex-wrap justify-center gap-5 py-5">
+      <div className="mt-16 container flex flex-wrap justify-center gap-5 py-5 mx-auto">
       {allBooks.map((item) => (
               <div key={item.id}>
                 <Cards item={item} />

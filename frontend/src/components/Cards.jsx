@@ -6,8 +6,6 @@ function Cards({ item }) {
     return null; // Or render a placeholder/loading state
   }
 
-  console.log(item.id);
-
   return (
     <div className="card w-96 min-h-96 max-h-96 dark:bg-base-100 bg-gray-100 shadow-2xl pt-5">
       <figure>

@@ -64,10 +64,7 @@ function Freebook() {
           <h1 className="font-semibold text-3xl pb-2">Top Selling Books</h1>
 
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam
-            aperiam labore veniam illo fuga et ipsa laborum neque, perspiciatis
-            odit sint eligendi velit nihil earum sunt beatae. Molestiae, eveniet
-            nulla?
+          Books are mirrors: You only see in them what you already have inside you.
           </p>
         </div>
 
